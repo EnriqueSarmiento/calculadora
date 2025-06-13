@@ -8,6 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Saludar con mi propio action
+        uses: enriquesarmiento/hello-js-action@v1.0.0
+        with:
+          who-to-greet: "Enrique"
+          
       - name: ⏳Hacer checkout - Clonar el repositorio actual
         uses: actions/checkout@v4.2.2
 
